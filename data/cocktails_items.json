@@ -1,0 +1,74 @@
+{
+    "cocktail_items": [
+        {
+            "menu_items_id": 1,
+            "menu_item_name": "Margarita",
+            "menu_item_desc": "Tequila, lime juice, Cointreau, salted rim",
+            "menu_item_price": 12,
+            "menu_item_stock": 85
+        },
+        {
+            "menu_items_id": 2,
+            "menu_item_name": "Old Fashioned",
+            "menu_item_desc": "Bourbon, Angostura bitters, sugar cube, orange twist",
+            "menu_item_price": 14,
+            "menu_item_stock": 70
+        },
+        {
+            "menu_items_id": 3,
+            "menu_item_name": "Mojito",
+            "menu_item_desc": "White rum, mint leaves, lime juice, club soda, sugar",
+            "menu_item_price": 10,
+            "menu_item_stock": 90
+        },
+        {
+            "menu_items_id": 4,
+            "menu_item_name": "Cosmopolitan",
+            "menu_item_desc": "Vodka, cranberry juice, triple sec, lime juice",
+            "menu_item_price": 13,
+            "menu_item_stock": 65
+        },
+        {
+            "menu_items_id": 5,
+            "menu_item_name": "Pina Colada",
+            "menu_item_desc": "Rum, coconut cream, pineapple juice",
+            "menu_item_price": 11,
+            "menu_item_stock": 75
+        },
+        {
+            "menu_items_id": 6,
+            "menu_item_name": "Manhattan",
+            "menu_item_desc": "Rye whiskey, sweet vermouth, Angostura bitters, cherry garnish",
+            "menu_item_price": 15,
+            "menu_item_stock": 60
+        },
+        {
+            "menu_items_id": 7,
+            "menu_item_name": "Daiquiri",
+            "menu_item_desc": "White rum, lime juice, simple syrup",
+            "menu_item_price": 9,
+            "menu_item_stock": 100
+        },
+        {
+            "menu_items_id": 8,
+            "menu_item_name": "Whiskey Sour",
+            "menu_item_desc": "Whiskey, lemon juice, simple syrup, egg white",
+            "menu_item_price": 13,
+            "menu_item_stock": 80
+        },
+        {
+            "menu_items_id": 9,
+            "menu_item_name": "Martini",
+            "menu_item_desc": "Gin, dry vermouth, olive or lemon twist garnish",
+            "menu_item_price": 15,
+            "menu_item_stock": 55
+        },
+        {
+            "menu_items_id": 10,
+            "menu_item_name": "Negroni",
+            "menu_item_desc": "Gin, Campari, sweet vermouth, orange twist",
+            "menu_item_price": 14,
+            "menu_item_stock": 72
+        }
+    ]
+}

@@ -1,0 +1,365 @@
+/* John Campbell
+CSC 343 
+Final Project 
+Restaurant Website
+*/
+
+/* These first 8 styles are used on all of the pages*/
+body {
+    text-align: center;
+    background-color: rgb(48, 47, 47);
+}
+
+.div_campbellLogo {
+    background-color: rgb(34, 34, 34);
+    transition: 2s;
+}
+
+.div_campbellLogo:hover {
+    transition: 2s;
+    background-color: rgb(255, 136, 0);
+}
+ul {
+    list-style: none;
+}
+.navBar li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+}
+.navBar {
+    padding: 0;
+    background-color: rgb(80, 79, 79);
+}
+
+.navBar li {
+    display: inline-block;
+    line-height: 4;
+}
+
+.navBar li a:hover {
+    color: rgb(0, 0, 184);
+    text-decoration: underline;
+}
+
+/* Style here is used for 'JCFinal_Project' */
+.welcomeContainer {
+    display: grid;
+    justify-items: center;
+}
+
+.h_welTag {
+    color: rgb(255, 255, 255);
+    font-family: "Lobster";
+    font-size: 150px;
+    top: 25%;
+    position: relative;
+    text-shadow: 2px 2px 5px black;
+    animation: loadHeaderIn 1s ease-in forwards;
+    
+}
+.h_welTag:active {
+    transition: 2s ease-in;
+    opacity: 100;
+}
+
+
+.div_welcomeSection {
+    background-color: wheat;
+    width: 95%;
+    height: 1000px;
+    background-size: cover;
+    transition: 3s ease-in-out;
+
+}
+
+.aboutUs {
+    display: grid;
+    width: 100%;
+    border-radius: 1px;
+    grid-template-columns: 600px 600px 600px;   
+    
+}
+
+.aboutSec {
+    transition: 2s;
+    background-color: rgb(255, 255, 255);
+    margin: 0.5em;
+}
+
+.aboutSec:hover {
+    transition: 2s;
+    background-color: rgb(192, 231, 247);
+    
+}
+.aboutIMG {
+    border: solid 1px black;
+    border-radius: 5em;
+}
+.aboutText {
+    font-size: 20px;
+}
+
+@keyframes loadHeaderIn {
+    from {
+        opacity: 0; 
+        font-size: 25px;
+        transform: translateY(50px); 
+        transform: rotate(0);
+    }
+    to {
+        opacity: 100; 
+        font-size: 150px;
+        transform: translateY(0);
+        transform: rotate(-10deg);
+    }
+}
+
+
+/* Footer here is use on all pages */
+.foot {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px 300px;
+    background-color: black;
+    color: white;
+    width: max-content;
+}
+
+
+.Flinks li {
+    font-size: x-large;
+    display:inline-block;
+    margin-right:10px;
+}
+
+/* This modal is used in the footer when a user inputs there email */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    height: 50%;
+    bottom: 0%;
+    left: 80%;
+    animation: fadeInModal 0.5s; 
+}
+
+.modal-content {
+    background-color: #b7d6d1;
+    color: black;
+    font-size: large;
+    padding: 20px;
+    height: 200px;
+    border: 2px solid #1f1f1f;
+    border-radius: 2em;
+    width: 80%;
+}
+
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+
+
+/* Used in  'JCFinal_ProjectMenus' to style the content that 
+    holds the grids of the menus*/
+.menu_container {
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu_opts {
+    display: flex;
+    align-content: center;
+    
+}
+
+.menu_opts input[type='radio'] {
+    opacity: 0.011;
+    z-index: 100;
+    width: 150px;
+    transition: 1s;
+    margin: 1em;
+}
+
+.menu_opts input[type='radio']+label {
+    font-size: xx-large;
+    padding: 0.5em;
+    transition: 1s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.menu_opts input[type='radio']:checked+label {
+    background-color: rgb(174, 141, 235);
+    font-size: 45px;
+    border: solid 2px black;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.menu_opts input[type='radio']:hover+label {
+    background-color: rgb(174, 141, 235);
+    transition: 1s;
+    font-size: 45px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.itemRow {
+    background-color: rgb(151, 179, 230);
+    font-size: xx-large;
+    justify-content: center;
+    padding: 1em;
+}
+
+.tryReload {
+    background-color: rgb(221, 195, 108);
+    padding: 0.1em;
+    margin: 0.5em;
+}
+
+/* Styles here are used for 'JCFinal_ProjectOrder' page */
+.div_vueContainer {
+    background-color: rgb(195, 196, 187);
+}
+.div_orderMenuPage {
+    display: flex;
+}
+/*gets the divs to display next to eachother  */
+.child {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px;
+    vertical-align: top;
+    background-color: rgb(255, 184, 143);
+
+}
+
+/* changes the backgroun and the boxes */
+.child label,
+.child input {
+    display: grid;
+    background-color: lightcyan;
+    color: black;
+    padding: 10px 10px 10px 10px;
+
+}
+
+/* edits the actual dot for the radio button */
+.child input[type="radio"],
+.child input[type="checkbox"] {
+    opacity: 0.011;
+    z-index: 100;
+    width: 100px;
+
+
+}
+
+#menu.child,
+#menu_section.child,
+#menu_items.child {
+    height: 500px;
+    overflow: auto;
+}
+
+
+/*changes the color of the selected item*/
+input[type="radio"]:checked+label {
+    background: lightgrey;
+    border-radius: 4px;
+}
+
+.itemDetails {
+    font-size: large;
+}
+
+.menuPar {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 100px 400px;
+}
+
+.cart {
+    background-color: burlywood;
+}
+
+.div_payNowWindow {
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    column-gap: 1em;
+    z-index: 1;
+    position: fixed;
+    border: solid darkcyan 5px;
+    border-radius: 10px;
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    background-color: lightgray;
+    width: 1000px;
+    padding: 1em;
+    animation: fadeInModal 0.5s;
+}
+
+.div_paidWindow {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 0.5em;
+    column-gap: 1em;
+    z-index: 2;
+    position: fixed;
+    border: solid rgb(0, 0, 0) 5px;
+    border-radius: 10px;
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    background-color: rgb(233, 233, 233);
+    width: 600px;
+    padding: 1em;
+    animation: fadeInModal 0.5s;
+}
+
+
+/* Style for 'JCFinal_ProjectContact' */
+.reachUs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1500px;
+    background-color: rgb(228, 228, 228);
+}
+
+.reachForm {
+    background-color: rgb(173, 196, 168); 
+    grid-column: 1 / span 2; 
+    grid-row: 2 / span 3;
+    font-size: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    input {
+        font-size: x-large;
+    }
+}
+
+/* Last stlye used to show page under constrution */
+.underCon {
+    background-color: white;
+    height: 500px;
+    justify-content: center;
+    display: grid;
+    align-content: center;
+}

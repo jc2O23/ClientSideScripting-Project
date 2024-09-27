@@ -1,0 +1,239 @@
+<!-- John Campbell -->
+<!-- CSC 343 -->
+<!-- Final Project -->
+<!-- Restaurant Website -->
+
+
+<!-- This page acts as the home page of the website
+    Clicking on the svg icon will take you back here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Come visit the best restaurant in Philly and learn more about the Restaurant on our website">
+    <meta name="keywords" content="Restaurant, food, drinks, sit-down, brunch, best">
+    <meta name="author" content="John Campbell">
+    <meta name="language" content="en">
+
+    <title>Campbell's Restaurant</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favIcon/favicon-16x16.png">
+    <link rel="manifest" href="./favIcon/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="JCFinal_Project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44ee71a0c5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- Logo the is displayed on all pages -->
+<body>
+    <div id="campbellLogo" class="div_campbellLogo">
+        <a href="JCFinal_Project.html" target="_self">
+            <svg width="750" height="450">
+
+                <defs>
+                    <linearGradient id="linGr_back" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6e93eb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#7ee2e6;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <defs>
+                    <linearGradient id="linGr_text" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#d60e0e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#001bb4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <defs>
+                    <linearGradient id="linGr_back_2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fa9600;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#fdd316;stop-opacity:1" />
+                        <stop offset="75%" style="stop-color:#d35400;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <circle cx="365" cy="400" r="310" style="fill: black;" />
+                <circle cx="365" cy="400" r="305" style="fill: url(#linGr_back);" />
+                <circle cx="365" cy="400" r="300" style="fill: url(#linGr_back_2);" />
+
+                <line x1="90" y1="430" x2="640" y2="430" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="80" y1="400" x2="650" y2="400" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="70" y1="370" x2="660" y2="370" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="80" y1="340" x2="650" y2="340" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="90" y1="310" x2="640" y2="310" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="100" y1="280" x2="630" y2="280" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="110" y1="250" x2="620" y2="250" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="130" y1="220" x2="600" y2="220" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="160" y1="190" x2="570" y2="190" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="200" y1="160" x2="530" y2="160" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="250" y1="130" x2="480" y2="130" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+
+
+                <text fill="url(#linGr_text)" font-size="4em" font-family="Sixtyfour" x="5" y="400"
+                    transform="rotate(-10)">
+                    <tspan>Campbells</tspan>
+
+
+
+
+
+            </svg>
+        </a>
+    </div>
+
+<!-- List of the pages that is displayed on all pages -->
+    <ul class="navBar">
+        <li><a href="JCFinal_Project.html">Home</a></li>
+        <li><a href="JCFinal_ProjectMenus.html">Our Menus</a></li>
+        <li><a href="JCFinal_ProjectOrder.html">Order Now</a></li>
+        <li><a href="JCFinal_ProjectContact.html">Contact Us</a></li>
+        <li><a href="JCFinal_ProjectAdmin.html">Admin</a></li>
+
+    </ul>
+
+<!-- When using the photo slide, I was having issues with the image not
+    cleanly changing and was flashing the background color real quick
+    One of the solutions that I used, is to pre-load the images and hide them. -->
+    <img src="./images/Pierogis3.jpg" style="display:none;" alt="" />
+    <img src="./images/Taco Set3(C).jpg" style="display:none;" alt="" />
+    <img src="./images/Wings.jpg" style="display:none;" alt="" />
+    <img src="./images/Pot Stickers.jpg" style="display:none;" alt="" />
+    <img src="./images/Tenders2.jpg" style="display:none;" alt="" />
+    <img src="./images/shrimpTaco.jpg" style="display:none;" alt="" />
+
+<!-- Container that holds the image slide and pop-up text -->
+    <div id="div_welcomeContainer" class="welcomeContainer">
+        <div id="welcomeSection" class="div_welcomeSection">
+            <h1 id="welTag" class="h_welTag">WELCOME TO <br>CAMPBELLS</h1>
+        </div>
+    </div>
+
+<!-- Section here just holds some info about the website with a few tags for text -->
+    <div id="div_aboutUs" class="aboutUs">
+        <div id="aboutHistory" class="aboutSec">
+            <h2 style="font-size: 50px; text-decoration: underline;">Our History</h2>
+            <img class='aboutIMG' src="./images/oldBuildjpg.jpg" width="300px" height="300px" />
+            <p class="aboutText">
+                The restaurant <strong>Campbells</strong> was founded in the year <strong>1752</strong>,
+                after <strong>John Campbell</strong> invested in turning an old building into
+                <em>one of the most popular restaurants found in South Philadelphia</em>.
+                Throughout the years, the restaurant has grown and expanded significantly.
+                In the past years, it has became a <strong>culinary landmark</strong> known for its
+                signature dishes, elegant atmosphere, and top-notch service. Campbells has consistently adapted
+                to changing times and tastes, evolving to meet the needs of generations of diners while <em>preserving
+                    its rich legacy</em>.
+                Today, Campbells stands not only as a restaurant but as a <strong>historic icon</strong> in the city.
+            </p>
+        </div>
+        <div id="aboutHistory" class="aboutSec">
+            <h2 style="font-size: 50px; text-decoration: underline;">Looking for Work</h2>
+            <img class='aboutIMG' src="./images/workForUs.jpg" width="300px" height="300px" />
+            <p class="aboutText">
+                Campbells restaurant has been at the heart of culinary excellence since its founding in 1752.
+                We believe our team members are the heart our restaurant, and we're always looking
+                for passionate individuals to join the team. If you are enthusiastic about hospitality, dedicated to
+                quality service, and eager to be a part of a <strong>dynamic and historic team</strong>, we'd
+                love to hear from you about how you can join the team!
+                <br>
+                Reach out personally to the owner at
+                <a href="mailto:campbellj19@lasalle.edu">campbellj19@lasalle.edu</a> to explore opportunities and
+                be a part of the team that continues to shape South Philadelphia's dining experience.
+            </p>
+        </div>
+        <div id="aboutCommunity" class="aboutSec">
+            <h2 style="font-size: 50px; text-decoration: underline;">Community Involvement</h2>
+            <img class='aboutIMG' src="./images/aboutCogif.gif" width="300px" height="300px" />
+            <p class="aboutText">
+                At <strong>Campbells</strong>, it is not just about us, we also look to improve the community.
+                Over the years, we've partnered with local businesses, contributed to food drives, and have supported
+                numerous
+                community events in <strong>All of Philadelphia</strong>. From helping local neighborhoods,
+                working with other dinners, Campbells actively engages in
+                initiatives that make a difference. We're committed to giving back to the community that has supported
+                us for centuries. Whether it's through sustainable sourcing or educational programs, we're here to
+                nurture and uplift the neighborhood we call home. <strong>Whether they want it or not.</strong>
+            </p>
+        </div>
+    </div>
+
+<!-- The footer of the site is shared accross all pages -->
+    <div id="footer" class="foot">
+
+        <!-- First section is just a link about the resturant -->
+        <div id="FreachOut">
+            <h3>Location</h3>
+            <p>1234 Campbell St., <br>South Philadelphia, PA 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: <a href="mailto:campbellj19@lasalle.edu">campbellj19@lasalle.edu</a></p>
+        </div>
+
+        <!-- Second one is just the bussiness hours -->
+        <div id="FdaysOpen">
+            <h3>Opening Days/Hours</h3>
+            <p>Monday - Friday: 11 AM - 10 PM</p>
+            <p>Saturday: 10 AM - 11 PM</p>
+            <p>Sunday: 10 AM - 9 PM</p>
+        </div>
+
+        <!-- Some links to social media and font icons -->
+        <div id="FsocialMedia">
+            <h3>Follow Us at</h3>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+            <a href="https://www.snapchat.com/" target="_blank"><i class="fa-brands fa-snapchat"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+        </div>
+
+        <!-- Same links as the nav-bar -->
+        <div id="Flinks">
+            <h3>Quick Links</h3>
+            <ul class="Flinks">
+                <li><a href="JCFinal_Project.html">Home</a></li>
+                <li><a href="JCFinal_ProjectMenus.html">Our Menus</a></li>
+                <li><a href="JCFinal_ProjectOrder.html">Order Now</a></li>
+                <li><a href="JCFinal_ProjectContact.html">Contact Us</a></li>
+                <li><a href="JCFinal_ProjectAdmin.html">Admin</a></li>
+            </ul>
+        </div>
+
+        <!-- A field to enter your email for updates -->
+        <div class="Fnewsletter">
+            <h3>Subscribe for Updates</h3>
+            <input type="email" id='submitField' value="Enter your email" /><br>
+            <button id='submitEmail' type="submit">Subscribe</button>
+        </div>
+
+        <!-- A modal the slides in when the email is entered correctly -->
+        <div id="modalID" class="modal">
+            <div class="modal-content">
+                <h3>Thank You for subscribing!</h3>
+                <p id="subText"></p>
+            </div>
+        </div>
+
+        <!-- Finally, some Copyright stuff -->
+        <div class="copyRight">
+            <h3>CopyRight Notice</h3>
+            <p>&copy; 2024 Campbell's Restaurant. All rights reserved.</p>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="JCFinal_Project.js"></script>
+</body>
+
+</html>

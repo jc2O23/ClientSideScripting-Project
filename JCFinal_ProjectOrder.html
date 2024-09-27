@@ -1,0 +1,346 @@
+<!-- John Campbell -->
+<!-- CSC 343 -->
+<!-- Final Project -->
+<!-- Restaurant Website -->
+
+<!-- This page is used to take users orders
+    It uses VUE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Come visit the best restaurant in Philly and learn more about the Restaurant on our website">
+    <meta name="keywords" content="menus, dinner, drinks, desserts, brunch, speacials, Cock Tails">
+    <meta name="author" content="John Campbell">
+    <meta name="language" content="en">
+
+    <title>Campbell's Restaurant</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favIcon/favicon-16x16.png">
+    <link rel="manifest" href="./favIcon/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="JCFinal_Project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44ee71a0c5.js" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.2/babel.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Same as the main page with logo
+        and the nave bar -->
+    <div id="campbellLogo" class="div_campbellLogo">
+        <a href="JCFinal_Project.html" target="_self">
+            <svg width="750" height="450">
+
+                <defs>
+                    <linearGradient id="linGr_back" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6e93eb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#7ee2e6;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <defs>
+                    <linearGradient id="linGr_text" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#d60e0e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#001bb4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <defs>
+                    <linearGradient id="linGr_back_2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fa9600;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#fdd316;stop-opacity:1" />
+                        <stop offset="75%" style="stop-color:#d35400;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <circle cx="365" cy="400" r="310" style="fill: black;" />
+                <circle cx="365" cy="400" r="305" style="fill: url(#linGr_back);" />
+                <circle cx="365" cy="400" r="300" style="fill: url(#linGr_back_2);" />
+
+                <line x1="90" y1="430" x2="640" y2="430" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="80" y1="400" x2="650" y2="400" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="70" y1="370" x2="660" y2="370" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="80" y1="340" x2="650" y2="340" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="90" y1="310" x2="640" y2="310" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="100" y1="280" x2="630" y2="280" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="110" y1="250" x2="620" y2="250" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="130" y1="220" x2="600" y2="220" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="160" y1="190" x2="570" y2="190" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="200" y1="160" x2="530" y2="160" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+                <line x1="250" y1="130" x2="480" y2="130" style="stroke:rgb(230, 230, 230);stroke-width:2" />
+
+
+                <text fill="url(#linGr_text)" font-size="4em" font-family="Sixtyfour" x="5" y="400"
+                    transform="rotate(-10)">
+                    <tspan>Campbells</tspan>
+
+
+
+
+
+            </svg>
+        </a>
+    </div>
+
+
+    <ul class="navBar">
+        <li><a href="JCFinal_Project.html">Home</a></li>
+        <li><a href="JCFinal_ProjectMenus.html">Our Menus</a></li>
+        <li><a href="JCFinal_ProjectOrder.html">Order Now</a></li>
+        <li><a href="JCFinal_ProjectContact.html">Contact Us</a></li>
+        <li><a href="JCFinal_ProjectAdmin.html">Admin</a></li>
+
+    </ul>
+
+    <!-- Here is where the VUE is attached to -->
+    <div id="vueContainer" class="div_vueContainer">
+
+        <!-- The first element is a modal that is used during the pay process of an order -->
+        <div id="payNowWindow" class="div_payNowWindow" style="display: none;">
+
+            <!-- Input fields here are used to get the user's information and it 
+                displays the user's order -->
+            <button type="submit"
+                style="grid-column: 5; grid-row: 1; width: 25px; height: 25px; position: sticky; left: 100%;"
+                v-on:click="closePayFrame()">X</button>
+            <h2 style="grid-column: 1 / span 2; grid-row: 1;">Type of Order:</h2>
+            <select id="selPick" name="selPick" style="height: 25px; grid-column: 1 / span 2; grid-row: 2;"
+                v-on:change="delFee()" v-model="orderType">
+                <option value="0" disabled selected>Select a type</option>
+                <option value="1">Pick-Up</option>
+                <option value="2">Delivery (10% Fee)</option>
+            </select>
+
+            <h2 style="grid-column: 3; grid-row: 1;">Phone Number:</h2>
+            <input type="number" placeholder="1234567890" v-model="inputChecks[0]"
+                style="height: 20px; grid-column: 3; grid-row: 2; width: 200px; padding-left: 1em;">
+
+            <h2 style="grid-column: 4; grid-row: 1;">Email:</h2>
+            <input type="email" placeholder="campbellj19@lasalle.edu" v-model="inputChecks[1]"
+                style="height: 20px; grid-column: 4; grid-row: 2; width: 200px; padding-left: 1em;">
+
+            <h2 style="grid-column: 3; grid-row: 3;">Name:</h2>
+            <input type="text" placeholder="John Smith" v-model="inputChecks[2]"
+                style="height: 20px; grid-column: 3; grid-row: 4; width: 200px; padding-left: 1em;">
+
+            <h2 style="grid-column: 3; grid-row: 5;">Payment Type:</h2>
+            <select id="paymentopt" name="paymentopt" v-model="payType"
+                style="height: 25px; grid-row: 6; grid-column: 3;">
+                <option value="" disabled selected>Select a payment</option>
+                <option value="1">Card</option>
+                <option value="2">Cash</option>
+            </select>
+
+            <!-- If we select card as payment, this input appears for the card number -->
+            <h2 v-if="payType == 1" style="grid-column: 4; grid-row: 5;">Card Number: </h2>
+            <input v-if="payType == 1" style="grid-column: 4; grid-row: 6; font-size: 20px;" type="number"
+                placeholder="1111 2222 3333 4444" v-model="inputChecks[4]" />
+            
+                <!-- If we select Pick-up, this input apperas for a time for pick-up -->
+            <h2 v-if="orderType == 1" style="grid-column: 4; grid-row: 3;">Pick-Up Time:</h2>
+            <select v-if="orderType == 1" id="selPickOpt" name="selPickOpt" v-model="inputChecks[3]"
+                style="height: 25px; grid-row: 4; grid-column: 4;">
+                <option value="" disabled selected>Select a preference</option>
+                <option value="ASAP">ASAP</option>
+                <option value="15mins">15mins</option>
+                <option value="30mins">30mins</option>
+                <option value="45mins">45mins</option>
+                <option value="1hr">1hr</option>
+            </select>
+
+            <!-- If we choose deleviery, we get an input for our address -->
+            <h2 v-if="orderType == 2" style="grid-column: 4; grid-row: 3;">Address:</h2>
+            <input v-if="orderType == 2" type="text" placeholder="1011 Red St."
+                style="height: 20px; grid-column: 4; grid-row: 4; width: 200px; padding-left: 1em;">
+
+                <!-- Here is displays the order and the total -->
+            <h2 style="grid-column: 1 / span 2; grid-row: 3;">Your Order</h2>
+            <span
+                style="grid-column: 1 / span 2; grid-row: 4 / span 3; background-color: white; border: solid 1px black; overflow: auto;">
+                <p v-for="item in userCart">(${{(item.menu_item_price).toFixed(2)}}) | {{item.menu_item_name}}</p>
+            </span>
+            <h2 style="grid-column: 1 / span 2; grid-row: 9;">Your Total</h2>
+            <p style="grid-column: 1 / span 2; grid-row: 10; font-size: 20px;">${{allTotal.toFixed(2)}}</p>
+
+            <button type="submit" style="grid-column: 3 / span 3; grid-row: 10; font-size: 20px;"
+                v-on:click="submitOrder()">Submit Order</button>
+
+
+
+        </div>
+        <!-- The next modal here is used once the user enters all of the info and the payment has been received, 
+            we display a recipt -->
+        <div id="paidWindow" class="div_paidWindow" style="display: none;">
+            <!-- Again showing there order -->
+            <h1 style="grid-column: 1 / span 3; font-size: 40px; align-content: center; background-color: #d3ac9e; border: solid black 2px; border-radius: 1em;">Thanks for Your Order!</h1>
+            <h2 style="grid-column: 1; grid-row: 2; align-content: center; font-size: 30px;">Your Order: </h2>
+
+            <!-- Total price -->
+            <span
+                style="grid-column: 2 / span 2; grid-row: 2; background-color: white; border: solid 1px black; overflow: auto;">
+                <p v-for="item in userCart">(${{(item.menu_item_price).toFixed(2)}}) | {{item.menu_item_name}}</p>
+                <p style="font-weight: bold;">Total: ${{allTotal.toFixed(2)}}</p>
+            </span>
+
+            <!-- All of the details they just entered -->
+            <h2 style="grid-column: 1; grid-row: 3; align-content: center; font-size: 30px;">Your Details: </h2>
+            <span
+                style="grid-column: 2 / span 2; grid-row: 3; background-color: white; border: solid 1px black; overflow: auto;">
+                <p style="font-weight: bold;">Order Number: | #{{inputChecks[5]}}</p>
+                <p>Phone Number: | {{inputChecks[0]}}</p>
+                <p>Email: | {{inputChecks[1]}}</p>
+                <p>Name: | {{inputChecks[2]}}</p>
+                <p>Time Pref: | {{inputChecks[3]}}</p>
+                <p v-if="payType == 1">Card Number: | {{inputChecks[4]}}</p>
+            </span>
+
+            <!-- Closes and clears all data stored -->
+            <button type="submit" style="grid-column: 1 / span 3; grid-row: 4; font-size: 40px; position: sticky;
+            height: 50px;
+            top: 100%; background-color: #8fbd82;"
+                v-on:click="endOrder()">Close</button>
+        </div>
+
+        <!-- This group is used to handle what the user is selecting item wise -->
+        <div id="orderMenuPage" class="div_orderMenuPage">
+            <div id="menu_table" class="menuPar">
+
+                <!-- We display all of the menus here -->
+                <div id="menu" class="child">
+                    <h1>Menus</h1>
+                    <div>
+                        <span v-for="(men, index) in menuNames">
+                            <input type="radio" :id="men" name="menu_RAD" v-model="selMenu" :value="men"
+                                v-on:change="selItem = ''" />
+                            <label :for="men">{{men}}</label>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- We show each item that is part of that menu -->
+                <div id="menu_items" class="child">
+                    <h1>Items</h1>
+                    <div v-if="selMenu" v-for="item in allMenuItems">
+                        <span v-if="item.menu_title == selMenu">
+                            <input type="radio" :id="item.menu_items_id" name='menItem_RAD' :value="item"
+                                v-model="selItem" />
+                            <label :for="item.menu_items_id">{{item.menu_item_name}} ({{item.menu_item_stock}})</label>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Here we show the details of the item that is selected -->
+                <div v-if="selItem" class="child">
+                    <h1>Item Details</h1>
+                    <span class="itemDetails">
+                        <p>Item Name: {{selItem.menu_item_name}}</p>
+                        <p style="width: 300px;">Description: {{selItem.menu_item_desc}}</p>
+                        <p>Item Price: ${{selItem.menu_item_price}}</p>
+                        <p>Item Stock: {{selItem.menu_item_stock}}</p>
+                    </span>
+                    <button style="width: 200px; height: 50px; font-size: large; margin: 1em;"
+                        v-on:click="addToCart()">Add to Cart</button>
+                </div>
+
+                <!-- Here is the user's cart -->
+                <div id="userCart" v-if="userCart.length > 0" class="cart"
+                    style="grid-column: 5; transition: 2s; animation: fadeInModal 0.5s;">
+                    <h1 style="border: solid black 4px;">Your Cart</h1>
+
+                    <!-- Each item is showed in the cart and a button is next to each item to remove it if we want -->
+                    <span v-for="(item, i) in userCart">
+                        <p>(${{(item.menu_item_price).toFixed(2)}}) | {{item.menu_item_name}} <button type="submit"
+                                v-on:click="removeItem(i)"
+                                style="background-color: rgb(238, 96, 96); border-radius: 10px;">(Remove)</button></p>
+                    </span>
+
+                    <!-- Overall total and pay now button to go to payment steps -->
+                    <p>Overall: ${{orgTotal.toFixed(2)}}</p>
+                    <button style="width: 200px; height: 50px; font-size: large; margin: 1em;" v-on:click="payNow()">Pay
+                        Now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Same as main page footer -->
+    <div id="footer" class="foot">
+        <div id="FreachOut">
+            <h3>Location</h3>
+            <p>1234 Campbell St., <br>South Philadelphia, PA 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: <a href="mailto:campbellj19@lasalle.edu">campbellj19@lasalle.edu</a></p>
+        </div>
+
+        <div id="FdaysOpen">
+            <h3>Opening Days/Hours</h3>
+            <p>Monday - Friday: 11 AM - 10 PM</p>
+            <p>Saturday: 10 AM - 11 PM</p>
+            <p>Sunday: 10 AM - 9 PM</p>
+        </div>
+
+        <div id="FsocialMedia">
+            <h3>Follow Us at</h3>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+            <a href="https://www.snapchat.com/" target="_blank"><i class="fa-brands fa-snapchat"
+                    style="font-size: 50px; padding: 0.1em; color: white;"></i></a>
+        </div>
+
+        <div id="Flinks">
+            <h3>Quick Links</h3>
+            <ul class="Flinks">
+                <li><a href="JCFinal_Project.html">Home</a></li>
+                <li><a href="JCFinal_ProjectMenus.html">Our Menus</a></li>
+                <li><a href="JCFinal_ProjectOrder.html">Order Now</a></li>
+                <li><a href="JCFinal_ProjectContact.html">Contact Us</a></li>
+                <li><a href="JCFinal_ProjectAdmin.html">Admin</a></li>
+            </ul>
+        </div>
+
+        <div class="Fnewsletter">
+            <h3>Subscribe for Updates</h3>
+            <input type="email" id='submitField' value="Enter your email" /><br>
+            <button id='submitEmail' type="submit">Subscribe</button>
+        </div>
+        <div id="modalID" class="modal">
+            <div class="modal-content">
+                <h3>Thank You for subscribing!</h3>
+                <p id="subText"></p>
+            </div>
+        </div>
+
+        <div class="copyRight">
+            <h3>CopyRight Notice</h3>
+            <p>&copy; 2024 Campbell's Restaurant. All rights reserved.</p>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="JCFinal_ProjectOrder.js"></script>
+</body>
+
+</html>

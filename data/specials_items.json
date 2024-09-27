@@ -1,0 +1,47 @@
+{
+    "special_items": [
+        {
+            "menu_items_id": 1,
+            "menu_item_name": "Grilled Chix Caprese",
+            "menu_item_desc": "grilled chicken breast, rosemary-parm potatoes, grilled asparagus, tomato-mozzarella salad, balsamic reduction",
+            "menu_item_price": 21,
+            "menu_item_stock": 92
+        },
+        {
+            "menu_items_id": 2,
+            "menu_item_name": "Scallops",
+            "menu_item_desc": "pan seared scallops, mushroom risotto, sweet peppers, bacon jam, chives",
+            "menu_item_price": 23,
+            "menu_item_stock": 41
+        },
+        {
+            "menu_items_id": 3,
+            "menu_item_name": "Al Pastor Bowl",
+            "menu_item_desc": "marinated pork, pineapples, pico, red rice, corn-black bean salad, micro cilantro, colby jack, sour cream",
+            "menu_item_price": 17,
+            "menu_item_stock": 76
+        },
+        {
+            "menu_items_id": 4,
+            "menu_item_name": "Chicken Tostada",
+            "menu_item_desc": "grilled chicken, refried beans, lettuce, pico, sour cream, chipotle ranch, fried flour tortilla, pickled onions, micro cilantro",
+            "menu_item_price": 21,
+            "menu_item_stock": 32
+        },
+        {
+            "menu_items_id": 5,
+            "menu_item_name": "Pesto Chix Sand",
+            "menu_item_desc": "grilled chicken, spinach, sharp provolone, sweet pepper pesto aioli, toasted seeded roll",
+            "menu_item_price": 18,
+            "menu_item_stock": 51
+        },
+        {
+            "menu_items_id": 5,
+            "menu_item_name": "Mojito Cubano",
+            "menu_item_desc": "marinated pork, honey ham, pickles, swiss cheese, strawberry-mustard sauce, crispy seeded roll",
+            "menu_item_price": 18,
+            "menu_item_stock": 51
+        }
+       
+    ]
+}

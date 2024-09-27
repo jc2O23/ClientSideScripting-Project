@@ -1,0 +1,123 @@
+{
+    "brunch_items": [
+        {
+            "menu_items_id": 1,
+            "menu_item_name": "Bacon Egg Rolls",
+            "menu_item_desc": "bacon, egg, cheese, deep fried wonton wrap, spicy ketchup",
+            "menu_item_price": 10,
+            "menu_item_stock": 92
+        },
+        {
+            "menu_items_id": 2,
+            "menu_item_name": "Scrapple Sliders",
+            "menu_item_desc": "scrapple cheese, fried eggs, spicy ketchup, hawaiian sweet rolls",
+            "menu_item_price": 13,
+            "menu_item_stock": 41
+        },
+        {
+            "menu_items_id": 3,
+            "menu_item_name": "Breakfast Tacos",
+            "menu_item_desc": "Chorizo, eggs, guacamole, cheese, flour tortilla",
+            "menu_item_price": 14,
+            "menu_item_stock": 76
+        },
+        {
+            "menu_items_id": 4,
+            "menu_item_name": "Pork Roll Tacos",
+            "menu_item_desc": "eggs, cheese, spicy ketchup, flour tortilla",
+            "menu_item_price": 14,
+            "menu_item_stock": 32
+        },
+        {
+            "menu_items_id": 5,
+            "menu_item_name": "Avocado Toast",
+            "menu_item_desc": "Guacamole, promegrante seeds, crab, mulit grain bread",
+            "menu_item_price": 16,
+            "menu_item_stock": 51
+        },
+        {
+            "menu_items_id": 6,
+            "menu_item_name": "French Toast",
+            "menu_item_desc": "French toast, walnuts, maple syrup, chocolate, caramel",
+            "menu_item_price": 15,
+            "menu_item_stock": 50
+        },
+        {
+            "menu_items_id": 7,
+            "menu_item_name": "Nashville Chicken & Waffles",
+            "menu_item_desc": "Fried chicken tossed in nashville sauce, vanilla waffle",
+            "menu_item_price": 15,
+            "menu_item_stock": 92
+        },
+        {
+            "menu_items_id": 8,
+            "menu_item_name": "Always sunny burger",
+            "menu_item_desc": "10z burger, hash brown, cheese, fried egg, bacon jam, red pepper aioli",
+            "menu_item_price": 18,
+            "menu_item_stock": 90
+        },
+        {
+            "menu_items_id": 9,
+            "menu_item_name": "Breakfast Burrito",
+            "menu_item_desc": "flank steak, pico, cheese, guacamole, flour tortilla",
+            "menu_item_price": 15,
+            "menu_item_stock": 74
+        },
+        {
+            "menu_items_id": 10,
+            "menu_item_name": "Three Eggs",
+            "menu_item_desc": "Three eggs you way",
+            "menu_item_price": 9,
+            "menu_item_stock": 36
+        },
+        {
+            "menu_items_id": 13,
+            "menu_item_name": "Candied Bacon Eggs Benny",
+            "menu_item_desc": "candied bacon, poached egg, chives, hollandaise, english muffin",
+            "menu_item_price": 14,
+            "menu_item_stock": 68
+        },
+        {
+            "menu_items_id": 18,
+            "menu_item_name": "Mob'lette",
+            "menu_item_desc": "eggs, pork sausage, long hots, sharp provolone",
+            "menu_item_price": 14,
+            "menu_item_stock": 51
+        },
+        {
+            "menu_items_id": 21,
+            "menu_item_name": "Western Lobster Omelette",
+            "menu_item_desc": "lobster, mushrooms, bell pepers, onions, cheese, cilantro",
+            "menu_item_price": 20,
+            "menu_item_stock": 64
+        },
+        {
+            "menu_items_id": 32,
+            "menu_item_name": "Oreo French Toast",
+            "menu_item_desc": "french toast, oreo crust, vanillia drizzle",
+            "menu_item_price": 16,
+            "menu_item_stock": 36
+        },
+        {
+            "menu_items_id": 41,
+            "menu_item_name": "Side of Home Fries",
+            "menu_item_desc": "Side of house cut home fries",
+            "menu_item_price": 5,
+            "menu_item_stock": 76
+        },
+        {
+            "menu_items_id": 46,
+            "menu_item_name": "Side of bacon",
+            "menu_item_desc": "",
+            "menu_item_price": 4,
+            "menu_item_stock": 51
+        },
+        {
+            "menu_items_id": 62,
+            "menu_item_name": "Side of Turkey Bacon",
+            "menu_item_desc": "",
+            "menu_item_price": 5,
+            "menu_item_stock": 32
+        }
+    ]
+}

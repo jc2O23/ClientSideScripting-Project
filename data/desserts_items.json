@@ -1,0 +1,47 @@
+{
+    "dessert_items": [
+        {
+            "menu_items_id": 1,
+            "menu_item_name": "Jr's CheeseCake",
+            "menu_item_desc": "New York style CheeseCake",
+            "menu_item_price": 12,
+            "menu_item_stock": 92
+        },
+        {
+            "menu_items_id": 2,
+            "menu_item_name": "Chocolate Lava",
+            "menu_item_desc": "Melted chocolate lave with even more chocolate on top",
+            "menu_item_price": 13,
+            "menu_item_stock": 41
+        },
+        {
+            "menu_items_id": 3,
+            "menu_item_name": "Cookie Skillet",
+            "menu_item_desc": "Warm chocolate chip cokkie with ice cream, whipped cream, chocolate on top",
+            "menu_item_price": 14,
+            "menu_item_stock": 76
+        },
+        {
+            "menu_items_id": 4,
+            "menu_item_name": "Chocolate Ice-Cream",
+            "menu_item_desc": "3 scoops of chocolate ice cream with your choice of toppings",
+            "menu_item_price": 14,
+            "menu_item_stock": 32
+        },
+        {
+            "menu_items_id": 5,
+            "menu_item_name": "Vanillia Ice-Cream",
+            "menu_item_desc": "3 scoops of ice cream with your choice of toppings",
+            "menu_item_price": 16,
+            "menu_item_stock": 51
+        },
+        {
+            "menu_items_id": 5,
+            "menu_item_name": "Monkey Bread",
+            "menu_item_desc": "Warm monkys bread with maple syrup bannana mix with whipped cream, walnuts, chocolate drizzile and caramel on top",
+            "menu_item_price": 16,
+            "menu_item_stock": 51
+        }
+       
+    ]
+}
